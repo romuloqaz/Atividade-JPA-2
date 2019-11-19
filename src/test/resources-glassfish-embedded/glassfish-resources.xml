@@ -10,7 +10,7 @@
                           res-type="javax.sql.DataSource"
                           datasource-classname="org.postgresql.ds.PGSimpleDataSource">
         <property name="user" value="postgres"/>
-        <property name="password" value="123"/>
+        <property name="password" value="postgres"/>
         <property name="url" value="jdbc:postgresql://localhost:5432/congresso"/>
     </jdbc-connection-pool>
 </resources>

@@ -35,7 +35,7 @@
     <port-number>5432</port-number>
     <database-name>congresso</database-name>
     <user>postgres</user>
-    <password>123</password>
+    <password>postgres</password>
     <property>
       <name>fish.payara.sql-trace-listeners</name>
       <value>com.sun.gjc.util.SQLTraceLogger</value>

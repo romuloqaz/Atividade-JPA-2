@@ -15,5 +15,12 @@ public class ArtigoDAO {
     public void salvar(Artigo artigo) {
         em.persist(artigo);
     }
+    public void atualizar(Artigo a) {
+        em.merge(a);
+    }
+
+    public Artigo buscar(int id) {
+        return em.find(Artigo.class, id);
+    }
 
 }
