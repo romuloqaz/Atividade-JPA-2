@@ -1,7 +1,7 @@
 # Atividade-JPA-2
 Atividade Avaliativa - Persistência de dados 2 (Engenharia reversa)
 
-#comando 
+# Comando 
 
 mvn clean package - criar a imagem da aplicação
 
