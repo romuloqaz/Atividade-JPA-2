@@ -8,10 +8,11 @@ import java.io.Serializable;
 @Entity
 @Table(name = "ARTIGOS")
 @Data
+@SequenceGenerator(name = "ART_SEQ", sequenceName = "artigo_id_seq")
 public class Artigo implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ART_SEQ")
     private Integer id;
 
     private String titulo;
