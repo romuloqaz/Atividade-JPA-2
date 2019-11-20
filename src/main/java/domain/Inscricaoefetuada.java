@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 @Entity
 @Data
-@SequenceGenerator(name = "ISF_SEQ", sequenceName = "inscricaoefetuada_id_seq")
+@SequenceGenerator(name = "ISF_SEQ", sequenceName = "inscricaoefetuada_id_seq", initialValue = 1, allocationSize = 1)
 public class Inscricaoefetuada implements Serializable {
 
     @Id

@@ -10,7 +10,7 @@ import java.util.List;
 @Entity
 @Table(name = "PARTICIPANTES")
 @Data
-@SequenceGenerator(name = "PRT_SEQ", sequenceName = "PARTICIPANTE_SEQ")
+@SequenceGenerator(name = "PRT_SEQ", sequenceName = "PARTICIPANTE_SEQ", initialValue = 1, allocationSize = 1)
 public class Participante implements Serializable {
 
     @Id

@@ -9,7 +9,7 @@ import java.util.Date;
 @Entity
 @Table(name = "INSCRICOES")
 @Data
-@SequenceGenerator(name = "ISC_SEQ", sequenceName = "inscricoes_id_seq")
+@SequenceGenerator(name = "ISC_SEQ", sequenceName = "inscricoes_id_seq", initialValue = 1, allocationSize = 1)
 public class Inscricao implements Serializable {
 
     public enum TipoEvento {CONGRESSO, SIMPOSIO};
