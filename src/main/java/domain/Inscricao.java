@@ -26,16 +26,20 @@ public class Inscricao implements Serializable {
     private TipoEvento tipoEvento;
     private String tipoParticipacao;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    private Participante participante;
+
     public Inscricao() {
 
     }
 
-    public Inscricao(String status, Date dataInscricao, Double preco, TipoEvento tipoEvento, String tipoParticipacao) {
+    public Inscricao(String status, Date dataInscricao, Double preco, TipoEvento tipoEvento, String tipoParticipacao, Participante participante) {
         this.status = status;
         this.dataInscricao = dataInscricao;
         this.preco = preco;
         this.tipoEvento = tipoEvento;
         this.tipoParticipacao = tipoParticipacao;
+        this.participante = participante;
     }
 
     public Integer getId() {
@@ -84,5 +88,13 @@ public class Inscricao implements Serializable {
 
     public void setTipoParticipacao(String tipoParticipacao) {
         this.tipoParticipacao = tipoParticipacao;
+    }
+
+    public Participante getParticipante() {
+        return participante;
+    }
+
+    public void setParticipante(Participante participante) {
+        this.participante = participante;
     }
 }
